@@ -21,3 +21,12 @@ def is_anagram(first_string, second_string):
         frequency[char] -= 1
         if frequency[char] < 0:
             return False
+
+    # Every character count must be zero for the strings to be anagrams.
+    return all(count == 0 for count in frequency.values())
+
+
+# Example one: "listen" and "silent" are anagrams.
+first_word = "listen"
+second_word = "silent"
+print("Are the strings anagrams?", is_anagram(first_word, second_word))

@@ -6,4 +6,11 @@
 def is_anagram(first_string, second_string):
     # If the strings do not have the same length, they cannot be anagrams.
     if len(first_string) != len(second_string):
-    
+        return False
+
+    # Count how many times each character appears in the first string.
+    frequency = {}
+    for char in first_string:
+        frequency[char] = frequency.get(char, 0) + 1
+
+

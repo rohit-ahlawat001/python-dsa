@@ -13,4 +13,11 @@ def is_anagram(first_string, second_string):
     for char in first_string:
         frequency[char] = frequency.get(char, 0) + 1
 
+    # Reduce the counts as we read the second string.
+    for char in second_string:
+        if char not in frequency:
+            return False
 
+        frequency[char] -= 1
+        if frequency[char] < 0:
+            return False

@@ -30,3 +30,8 @@ def is_anagram(first_string, second_string):
 first_word = "listen"
 second_word = "silent"
 print("Are the strings anagrams?", is_anagram(first_word, second_word))
+
+# Example two: "hello" and "world" are not anagrams.
+third_word = "hello"
+fourth_word = "world"
+print("Are the strings anagrams?", is_anagram(third_word, fourth_word))

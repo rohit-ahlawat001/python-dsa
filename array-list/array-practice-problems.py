@@ -10,3 +10,6 @@ for element in numbers[1:]:
     if element > largest:
         largest = element
 print(f'Largest element: {largest}')
+
+
+### 2. Count Occurrences of an Element

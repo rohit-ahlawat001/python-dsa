@@ -13,3 +13,12 @@ print(f'Largest element: {largest}')
 
 
 ### 2. Count Occurrences of an Element
+numbers = [1, 2, 3, 2, 4, 2, 5]
+target = 2
+
+# write code here
+count = 0
+for element in numbers:
+    if element == target:
+        count += 1
+print(f'Occurrences of {target}: {count}')

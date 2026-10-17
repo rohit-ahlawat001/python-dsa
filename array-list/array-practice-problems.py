@@ -24,3 +24,12 @@ for element in numbers:
 print(f'Occurrences of {target}: {count}')
 
 ### Solving by another solution using fruits list
+fruits = ['apple', 'banana', 'orange', 'banana', 'kiwi', 'banana']
+target_fruit = 'banana'
+
+# write code here
+count = 0
+for fruit in fruits:
+    if fruit == target_fruit:
+        count += 1
+print(f'Occurrences of {target_fruit}: {count}')

@@ -22,3 +22,5 @@ for element in numbers:
     if element == target:
         count += 1
 print(f'Occurrences of {target}: {count}')
+
+### Solving by another solution using fruits list
